@@ -1,0 +1,8 @@
+<h1>Edit your Kitten</h1>
+
+<%= render "form" %>
+
+<%= link_to 'Destroy Kitten', kitten_path(@kitten),
+			  class: 'btn-danger',
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>

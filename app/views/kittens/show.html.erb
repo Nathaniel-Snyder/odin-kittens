@@ -1,0 +1,27 @@
+<h1>Kitten <%= @kitten.id %></h1>
+
+<p>
+	<b>Name:</b>
+	<%= @kitten.name %>
+</p>
+
+<p>
+	<b>Age:</b>
+	<%= @kitten.age %>
+</p>
+
+<p>
+	<b>Softness:</b>
+	<%= @kitten.softness %>
+</p>
+
+<p>
+	<b>Cuteness:</b>
+	<%= @kitten.cuteness %>
+</p>
+
+<%= link_to 'Edit', edit_kitten_path(@kitten) %>  |  
+      <td><%= link_to 'Destroy', kitten_path(@kitten),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>  |  
+<%= link_to 'Home', root_path %>
